@@ -146,7 +146,7 @@ fread(&les,sizeof(struct Lessons),1,fptr);
 if(les.lessonNumber!=0 && lessonNumber==les.lessonNumber)// if your lesson number is true, you can choose to update
 {
      int option2;
-     printf("choose 1(lesson name), 2(lesson teacher), 3(discontinuity), 4(exam note)\n");
+     printf("choose\n1->lesson name\n2->lesson teacher\n3->discontinuity\n4->exam note\n");
      scanf("%d",&option2);
 
      if(option2 == 1)// updates for lesson name
@@ -167,7 +167,7 @@ if(les.lessonNumber!=0 && lessonNumber==les.lessonNumber)// if your lesson numbe
      else if(option2 == 4)// updates for middle or final exam
      {
      int option3;
-     printf("choose 1(middle exam), 2(final exam):\n");// choose to update middle or final exam
+     printf("choose 1->middle exam\n2->final exam:\n");// choose to update middle or final exam
      scanf("%d",&option3);
 
      if(option3 == 1)// updates for middle exam note
